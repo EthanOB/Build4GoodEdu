@@ -8,19 +8,19 @@ const client = new DiscussServiceClient({
   authClient: new GoogleAuth().fromAPIKey(API_KEY),
 });
 
-async function main() {
+async function generateQuestions(num, topic, type, notes) {
   const result = await client.generateMessage({
-    model: MODEL_NAME, // Required. The model to use to generate the result.
-    temperature: 0.5, // Optional. Value `0.0` always uses the highest-probability result.
-    candidateCount: 1, // Optional. The number of candidate results to generate.
+    model: MODEL_NAME, 
+    temperature: 0.5, 
+    candidateCount: 1,
     prompt: {
-      context: "Create a 2 Question Quiz about the following topic",
-      messages: [{ content: "conservation of energy in physics" }],
+      context: notes,
+      messages: [{ content: "Generate "+ num + " " + type + " questions about " + topic + "from the notes and answer key" }],
     },
   });
 
   console.log(result[0].candidates[0].content);
 }
 
-main();
+generateQuestions(3, "Conservation of Energy", "multiple choice", "The law of conservation of energy states that energy cannot be created or destroyed, but it can change forms. For example, chemical energy can be converted to kinetic energy in the explosion of a stick of dynamite. The total amount of energy in an isolated system remains constant over time. This principle is known as the conservation of energy.");
 //AIzaSyDfkbANyV5c33jgmrJnqoc3M1gPgplxKPM
