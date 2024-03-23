@@ -155,8 +155,8 @@
       <script>      
       function clickbuttonlogin(){
         // entered username and password
-        var enteredUsername = document.getElementById("uname");
-        var enteredPassword = document.getElementById("psw");
+        var enteredUsername = document.getElementById("uname").value;
+        var enteredPassword = document.getElementById("psw").value;
         // verify if entered username and password is correct
         var correctUsername = "M"
         var correctPassword = "H"
@@ -166,9 +166,9 @@
         // when user has a failed login
         else {
           alert("Longhorn Intrusion? Please try again.");}
-      }</script>
+      }
+      </script>
 
-      
     <div id="id01" class="modal">    
     <form class="modal-content animate" action="/action_page.php" method="post">
       <div class="imgcontainer">
