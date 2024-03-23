@@ -1,5 +1,10 @@
-import { DiscussServiceClient } from "./node_modules/@google-ai/generativelanguage/build/src/index.js";
-import { GoogleAuth } from "./node_modules/google-auth-library/build/src/index.js";
+// import { DiscussServiceClient } from "./node_modules/@google-ai/generativelanguage/build/src/v1beta/discuss_service_client.js"; ///
+import {DiscussServiceClient} from "@google-ai/generativelanguage/build/src/v1beta/discuss_service_client.js";
+import {GoogleAuth} from "google-auth-library/build/src/index.js";
+// import { GoogleAuth } from "./node_modules/google-auth-library/build/src/index.js";
+
+// const DiscussServiceClient = require("./node_modules/@google-ai/generativelanguage/build/src/v1beta/discuss_service_client.js").DiscussServiceClient;
+// const GoogleAuth = require("./node_modules/google-auth-library/build/src/index.js").GoogleAuth;
 /*
 const { DiscussServiceClient } = require("@google-ai/generativelanguage");
 const { GoogleAuth } = require("google-auth-library");
