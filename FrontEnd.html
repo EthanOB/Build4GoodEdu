@@ -163,8 +163,8 @@
         var correctPassword = "Howdy!"
         // when user logins in successfully
         if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
-          alert("Success!");
-          window.location.href = "https://127.0.0.1:5500/Folders.html";}
+          window.location.href.replace("http://www.w3schools.com");
+        }
         // when user has a failed login
         else {
           alert("Longhorn Intrusion? Please try again.");}
@@ -172,7 +172,7 @@
       </script>
 
     <div id="id01" class="modal">    
-    <form class="modal-content animate" method="post"><!--action="./Folders.html"-->>
+    <form class="modal-content animate" action="./Folders.html" method="post">
       <div class="imgcontainer">
         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
         <img src="https://today.tamu.edu/wp-content/uploads/2021/02/210205_NewRev_JKE_3.jpg" alt="Avatar" class="avatar">
