@@ -1,6 +1,9 @@
+import { DiscussServiceClient } from "./node_modules/@google-ai/generativelanguage/build/src/index.js";
+import { GoogleAuth } from "./node_modules/google-auth-library/build/src/index.js";
+/*
 const { DiscussServiceClient } = require("@google-ai/generativelanguage");
 const { GoogleAuth } = require("google-auth-library");
-
+*/
 const MODEL_NAME = "models/chat-bison-001";
 const API_KEY = "AIzaSyDfkbANyV5c33jgmrJnqoc3M1gPgplxKPM";
 
