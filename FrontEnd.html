@@ -158,12 +158,36 @@
   <script type="module" src="index.js"></script>
   </head>
   <body>
+<<<<<<< Updated upstream
   
   <h1>Ms. Rev: The Quiz Whiz</h1>
   <h2>Login Form</h2>
   
   <button onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Login</button>
   
+=======
+  <script>// Login button on the main page</script>
+      <script>
+      function clickbuttonlogin(){
+        // entered username and password
+        var enteredUsername = document.getElementById("uname");
+        var enteredPassword = document.getElementById("psw");
+        console.log(enteredUsername);
+        // verify if entered username and password is correct
+        var correctUsername = "M"
+        var correctPassword = "H"
+        // when user logins in successfully
+        if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+         alert("Aggie in the house!");}
+        // when user has a failed login
+        else {
+          alert("Longhorn Intrusion? Please try again.");}
+      }
+      </script>
+  <h2>Modal Login Form</h2>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+>>>>>>> Stashed changes
   <div id="id01" class="modal">
     
     <form class="modal-content animate" action="/action_page.php" method="post">
