@@ -152,23 +152,23 @@
   <h2>Login Form</h2>
   
   <button onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Login</button>
-      <script>
+      <script>      
       function clickbuttonlogin(){
         // entered username and password
-        var enteredUsername = document.getElementbyID("uname");
-        var enteredPassword = document.getElementbyID("psw");
+        var enteredUsername = document.getElementById("uname");
+        var enteredPassword = document.getElementById("psw");
         // verify if entered username and password is correct
         var correctUsername = "M"
         var correctPassword = "H"
         // when user logins in successfully
         if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
-         alert("Aggie in the house!");}
+          alert("Success!");}
         // when user has a failed login
         else {
           alert("Longhorn Intrusion? Please try again.");}
-      }
-      </script>
+      }</script>
 
+      
     <div id="id01" class="modal">    
     <form class="modal-content animate" action="/action_page.php" method="post">
       <div class="imgcontainer">
