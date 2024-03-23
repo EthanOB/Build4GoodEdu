@@ -1,7 +1,15 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ms. Rev: The Quiz Whiz</title>
+  </head>
+  <body>
+    <p>Ms.Rev: The Quiz Whiz</p>
+  </body>
+</html>
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
   body {font-family: Arial, Helvetica, sans-serif;}
@@ -15,22 +23,16 @@
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
-
-  h2{
-    text-align:center;
-  }
   
   /* Set a style for all buttons */
   button {
-    background-color: #6e1c03;
+    background-color: #800000;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
     width: 100%;
-    display:block;
-    margin:auto
   }
   
   button:hover {
@@ -41,7 +43,7 @@
   .cancelbtn {
     width: auto;
     padding: 10px 18px;
-    background-color: #f44336;
+    background-color: #800000;
   }
   
   /* Center the image and position the close button */
@@ -133,11 +135,10 @@
   </style>
   </head>
   <body>
-  
-  <h2>Login Form</h2>
-  
+  <script>// Login button on the main page</script>
+  <h2>Modal Login Form</h2>
   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-  
+
   <div id="id01" class="modal">
     
     <form class="modal-content animate" action="/action_page.php" method="post">
@@ -165,7 +166,7 @@
       </div>
     </form>
   </div>
-  
+
   <script>
   // Get the modal
   var modal = document.getElementById('id01');
@@ -180,3 +181,7 @@
   
   </body>
   </html>
+
+
+
+
