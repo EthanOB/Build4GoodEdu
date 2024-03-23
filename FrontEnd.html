@@ -3,8 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ms. Rev: The Quiz Whiz</title>
   <style>
-  body {font-family: Arial, Helvetica, sans-serif;}
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('https://www.tamus.edu/presidential-search/wp-content/uploads/sites/119/2020/09/TAMU_Aerials_028_A-scaled.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
   
   /* Full-width input fields */
   input[type=text], input[type=password] {
@@ -15,9 +23,18 @@
     border: 1px solid #ccc;
     box-sizing: border-box;
   }
-
+  
+  h1{
+    background-color: rgb(243, 196, 65);
+    padding: 50px;
+    font-size: 70px;
+    text-align: center;
+  }
+  
   h2{
     text-align:center;
+    font-size: 45px;
+    vertical-align: baseline;
   }
   
   /* Set a style for all buttons */
@@ -25,12 +42,11 @@
     background-color: #6e1c03;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: auto;
     border: none;
     cursor: pointer;
     width: 100%;
     display:block;
-    margin:auto
   }
   
   button:hover {
@@ -76,7 +92,7 @@
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0); /* Black w/ opacity */
     padding-top: 60px;
   }
   
@@ -134,9 +150,10 @@
   </head>
   <body>
   
+  <h1>Ms. Rev: The Quiz Whiz</h1>
   <h2>Login Form</h2>
   
-  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:200px;">Login</button>
   
   <div id="id01" class="modal">
     
