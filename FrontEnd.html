@@ -5,7 +5,7 @@
   <title>Ms. Rev: The Quiz Whiz</title>
   <style>
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Garamond, Garamond, sans-serif;
     background-image: url('https://www.tamus.edu/presidential-search/wp-content/uploads/sites/119/2020/09/TAMU_Aerials_028_A-scaled.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,14 +24,16 @@
   
   h1{
     padding-top: 50px;
-    font-size: 70px;
+    font-size: 80px;
     text-align: center;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
   }
   
   h2{
     text-align:center;
     font-size: 45px;
     vertical-align: baseline;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
   }  
   /* Set a style for all buttons */
   button {
@@ -157,11 +159,12 @@
         var enteredUsername = document.getElementById("uname").value;
         var enteredPassword = document.getElementById("psw").value;
         // verify if entered username and password is correct
-        var correctUsername = "M"
-        var correctPassword = "H"
+        var correctUsername = "Miss_Rev"
+        var correctPassword = "Howdy!"
         // when user logins in successfully
         if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
-          alert("Success!");}
+          alert("Success!");
+          window.location.href = "https://127.0.0.1:5500/Folders.html";}
         // when user has a failed login
         else {
           alert("Longhorn Intrusion? Please try again.");}
